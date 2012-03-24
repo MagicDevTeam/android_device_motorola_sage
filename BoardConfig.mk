@@ -24,9 +24,6 @@
 # variant, so that it gets overwritten by the parent (which goes
 # against the traditional rules of inheritance).
 
-# Model variant (DEFY_FROYO, DEFY_GINGER)
-#BOARD_DEFY_MODEL := DEFY_FROYO
-
 USE_CAMERA_STUB := false
 BOARD_USE_FROYO_LIBCAMERA := true
 BOARD_USES_GENERIC_AUDIO := false
@@ -48,7 +45,7 @@ TARGET_GLOBAL_CFLAGS += -mtune=cortex-a8
 TARGET_GLOBAL_CPPFLAGS += -mtune=cortex-a8
 TARGET_OMAP3 := true
 COMMON_GLOBAL_CFLAGS += -DTARGET_OMAP3 -DOMAP_COMPAT -DMOTOROLA_UIDS
-#ARCH_ARM_HAVE_TLS_REGISTER := false
+ARCH_ARM_HAVE_TLS_REGISTER := false
 LOCAL_CFLAGS += -DWVGA_BUFFERS  #fix video rec
 
 # Wifi related defines
@@ -70,10 +67,8 @@ BOARD_HOSTAPD_DRIVER_NAME   := wilink
 
 BOARD_USE_YUV422I_DEFAULT_COLORFORMAT := true
 BOARD_EGL_CFG := device/motorola/sage/egl.cfg
-#BOARD_CUSTOM_USB_CONTROLLER := ../../device/motorola/jordan/UsbController.cpp
 
 BOARD_HAVE_BLUETOOTH := true
-#BOARD_CUSTOM_BLUEDROID := ../../../device/motorola/jordan/bluedroid.c
 
 BOARD_MASS_STORAGE_FILE_PATH := "/sys/devices/platform/usb_mass_storage/lun0/file"
 
@@ -121,8 +116,6 @@ BOARD_SYSTEM_DEVICE := /dev/block/mtdblock7
 BOARD_DATA_DEVICE   := /dev/block/mtdblock9
 
 BOARD_NEVER_UMOUNT_SYSTEM := true
-#TARGET_RECOVERY_UI_LIB := librecovery_ui_generic
-#TARGET_RECOVERY_UPDATER_LIBS += librecovery_updater_generic
 
 # Override cyanogen squisher to customize our update zip package
 TARGET_CUSTOM_RELEASETOOL := ./device/motorola/sage/releasetools/squisher
@@ -130,18 +123,5 @@ TARGET_CUSTOM_RELEASETOOL := ./device/motorola/sage/releasetools/squisher
 # Sage need 2nd-init binary from motorola common
 TARGET_NEEDS_MOTOROLA_HIJACK := true
 
-# In nighly builds only
-#ifndef CYANOGEN_RELEASE
 
-#BOARD_HAVE_FM_RADIO := true
-#BOARD_FM_DEVICE := wl1271
-#TARGET_GLOBAL_CFLAGS += -DHAVE_FM_RADIO
-#TARGET_GLOBAL_CPPFLAGS += -DHAVE_FM_RADIO
-
-#endif
-
-# Gingerbread kernel specifics
-#ifeq ($(BOARD_DEFY_MODEL),DEFY_GINGER)
-#BOARD_USE_CID_ROTATE_34 := true
-#endif
 
