@@ -56,6 +56,9 @@ networkaddress.cache.ttl=0
 # BEGIN Motorola, wvr004, 7-Oct-2010, IKKOBEFR-298, default Mobile Hotspot is on
 ro.mot.mynet=true
 
+# Tell UsbService that we're using Usb.apk
+ro.usb.use_custom_service=1
+
 # use 1% battery steps
 ro.product.use_charge_counter=1
 
