@@ -85,8 +85,10 @@ PRODUCT_COPY_FILES += \
 	external/bootmenu/images/progress_fill.png:system/bootmenu/images/progress_fill.png \
 	device/motorola/sage/bootmenu/recovery/res/keys:system/bootmenu/recovery/res/keys \
 	device/motorola/sage/bootmenu/recovery/res/images/icon_error.png:system/bootmenu/recovery/res/images/icon_error.png \
+	device/motorola/sage/bootmenu/recovery/res/images/icon_firmware_error.png:system/bootmenu/recovery/res/images/icon_firmware_error.png \
 	device/motorola/sage/bootmenu/recovery/res/images/icon_done.png:system/bootmenu/recovery/res/images/icon_done.png \
 	device/motorola/sage/bootmenu/recovery/res/images/icon_installing.png:system/bootmenu/recovery/res/images/icon_installing.png \
+	device/motorola/sage/bootmenu/recovery/res/images/icon_firmware_install.png:system/bootmenu/recovery/res/images/icon_firmware_install.png \
 	device/motorola/sage/bootmenu/recovery/res/images/indeterminate1.png:system/bootmenu/recovery/res/images/indeterminate1.png \
 	device/motorola/sage/bootmenu/recovery/res/images/indeterminate2.png:system/bootmenu/recovery/res/images/indeterminate2.png \
 	device/motorola/sage/bootmenu/recovery/res/images/indeterminate3.png:system/bootmenu/recovery/res/images/indeterminate3.png \
